@@ -7,11 +7,12 @@ export default function Card(props) {
     console.log({copyright})
 
     return(
-        <div>
+        <div className='photo-container'>
             <img src={url} alt={title}></img>
             <div>
-                <p htmlFor = 'author'>Author: {copyright}</p>
-                <p htmlFor = 'date'>Date: {date}</p>
+                <h2>{title}</h2>    
+                <h3 htmlFor = 'author'>Author: {copyright}</h3>
+                <h3 htmlFor = 'date'>Date: {date}</h3>
                 <p htmlFor = 'caption'>{explanation}</p>
             </div>
         </div>
